@@ -5,9 +5,9 @@ import { RouterModule }   from '@angular/router';
 
 import { AppComponent }        from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
+import { DashboardComponent } from "./dashboard.component";
 import { HeroesComponent }     from './heroes.component';
 import { HeroService } from './hero.service';
-import { DashboardComponent } from "./dashboard.component";
 
 @NgModule({
   imports: [
@@ -24,7 +24,7 @@ import { DashboardComponent } from "./dashboard.component";
       },
       {
         path: '',
-        redirectTo: '/dashboard',
+        redirectTo: '/dashboard', //afficher dans l'url
         pathMatch: 'full'
       },
     ])
