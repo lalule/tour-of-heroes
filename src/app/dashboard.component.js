@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var hero_service_1 = require("./hero.service");
+var hero_service_1 = require('./hero.service');
 var DashboardComponent = (function () {
     function DashboardComponent(heroService) {
         this.heroService = heroService;
@@ -23,7 +23,7 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         core_1.Component({
             selector: 'my-dashboard',
-            templateUrl: './dashboard.component.html'
+            template: "\n  <h3>Top Heroes</h3>\n  <div class=\"grid grid-pad\">\n    <div *ngFor=\"let hero of heroes\" class=\"col-1-4\">\n      <div class=\"module hero\">\n        <h4>{{hero.name}}</h4>\n      </div>\n    </div>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [hero_service_1.HeroService])
     ], DashboardComponent);
