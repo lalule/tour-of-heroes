@@ -2,12 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `
+   template: `
    <h1>{{title}}</h1>
-   <nav>
-     <a routerLink="/dashboard">Dashboard</a>
-     <a routerLink="/heroes">Heroes</a>
-   </nav>
+   <a routerLink="/heroes">Heroes</a>
+   <a routerLink="/dashboard">dashboard</a>
    <router-outlet></router-outlet>
  `
 })
